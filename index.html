@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HabuLab - বাংলায় সহজ টিউটোরিয়াল</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <!-- SVG Logo -->
+      <svg width="60" height="60" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Outer circle -->
+        <circle cx="32" cy="32" r="30" stroke="#001F3F" stroke-width="4" fill="#4A90E2" />
+        
+        <!-- Neural network nodes (circles) -->
+        <circle cx="20" cy="20" r="5" fill="#F5F7FA" />
+        <circle cx="44" cy="20" r="5" fill="#F5F7FA" />
+        <circle cx="32" cy="32" r="6" fill="#FFFFFF" />
+        <circle cx="20" cy="44" r="5" fill="#F5F7FA" />
+        <circle cx="44" cy="44" r="5" fill="#F5F7FA" />
+        
+        <!-- Connecting lines -->
+        <line x1="20" y1="20" x2="32" y2="32" stroke="#FFFFFF" stroke-width="2" />
+        <line x1="44" y1="20" x2="32" y2="32" stroke="#FFFFFF" stroke-width="2" />
+        <line x1="20" y1="44" x2="32" y2="32" stroke="#FFFFFF" stroke-width="2" />
+        <line x1="44" y1="44" x2="32" y2="32" stroke="#FFFFFF" stroke-width="2" />
+      </svg>
+      <div class="title">
+        <h1>HabuLab</h1>
+        <p>বাংলায় মেশিন লার্নিং শেখার সহজ প্ল্যাটফর্ম</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">হোম</a></li>
+        <li><a href="#">যোগাযোগ</a></li>
+        <li><a href="#">আমাদের সম্পর্কে</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <div class="section">
+        <div class="section-header" onclick="toggleMenu('mlIndex')">📘 Machine Learning</div>
+        <ul id="mlIndex" class="section-list hidden">
+          <li><a href="#" onclick="showContent('মেশিন লার্নিং পরিচিতি', 'মেশিন লার্নিং হলো এমন একটি প্রযুক্তি যেখানে কম্পিউটার ডেটা থেকে শেখে এবং পূর্বাভাস দেয়।')">অধ্যায় ১: পরিচিতি</a></li>
+          <li><a href="#" onclick="showContent('Supervised Learning', 'Supervised Learning হলো এমন একটি প্রক্রিয়া যেখানে লেবেলড ডেটা ব্যবহার করে মডেল ট্রেন করা হয়।')">অধ্যায় ২: Supervised Learning</a></li>
+          <li><a href="#" onclick="showContent('Unsupervised Learning', 'Unsupervised Learning হলো লেবেলবিহীন ডেটা থেকে প্যাটার্ন খোঁজা।')">অধ্যায় ৩: Unsupervised Learning</a></li>
+          <li><a href="#" onclick="showContent('Model Evaluation', 'মডেলের পারফরম্যান্স মাপার বিভিন্ন পদ্ধতি এখানে শেখানো হবে।')">অধ্যায় ৪: Model Evaluation</a></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="section-header" onclick="toggleMenu('sqlIndex')">💾 SQL</div>
+        <ul id="sqlIndex" class="section-list hidden">
+          <li><a href="#" onclick="showContent('Database পরিচিতি', 'ডেটাবেস হলো ডেটা সংরক্ষণের ব্যবস্থা।')">অধ্যায় ১: Database পরিচিতি</a></li>
+          <li><a href="#" onclick="showContent('SELECT Statement', 'SELECT statement দিয়ে ডেটা রিট্রিভ করা হয়।')">অধ্যায় ২: SELECT Statement</a></li>
+          <li><a href="#" onclick="showContent('JOINs', 'JOINs ব্যবহার করে বিভিন্ন টেবিল যুক্ত করা যায়।')">অধ্যায় ৩: JOINs</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="content" id="contentArea">
+      <h2>স্বাগতম HabuLab-এ!</h2>
+      <p>এখানে আপনি বাংলায় মেশিন লার্নিং সহজভাবে শিখতে পারবেন। বাম পাশে টপিকগুলো থেকে অধ্যায় নির্বাচন করুন।</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HabuLab. সর্বস্বত্ব সংরক্ষিত।</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

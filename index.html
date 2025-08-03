@@ -1,78 +1,75 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HabuLab - বাংলায় সহজ টিউটোরিয়াল</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HABULAB - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <!-- SVG Logo -->
-      <svg width="60" height="60" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- Outer circle -->
-        <circle cx="32" cy="32" r="30" stroke="#001F3F" stroke-width="4" fill="#4A90E2" />
-        
-        <!-- Neural network nodes (circles) -->
-        <circle cx="20" cy="20" r="5" fill="#F5F7FA" />
-        <circle cx="44" cy="20" r="5" fill="#F5F7FA" />
-        <circle cx="32" cy="32" r="6" fill="#FFFFFF" />
-        <circle cx="20" cy="44" r="5" fill="#F5F7FA" />
-        <circle cx="44" cy="44" r="5" fill="#F5F7FA" />
-        
-        <!-- Connecting lines -->
-        <line x1="20" y1="20" x2="32" y2="32" stroke="#FFFFFF" stroke-width="2" />
-        <line x1="44" y1="20" x2="32" y2="32" stroke="#FFFFFF" stroke-width="2" />
-        <line x1="20" y1="44" x2="32" y2="32" stroke="#FFFFFF" stroke-width="2" />
-        <line x1="44" y1="44" x2="32" y2="32" stroke="#FFFFFF" stroke-width="2" />
-      </svg>
-      <div class="title">
-        <h1>HabuLab</h1>
-        <p>বাংলায় মেশিন লার্নিং শেখার সহজ প্ল্যাটফর্ম</p>
+  <!-- ===== Header Start ===== -->
+  <header class="header">
+    <div class="container">
+      <img src="images/habuLab logo.png" alt="HABULAB Logo" class="logo">
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <!-- ===== Header End ===== -->
+
+  <section class="hero">
+    <h1>Welcome to HABULAB</h1>
+    <p>Learn IELTS, Machine Learning, SQL, and Python - All in One Place!</p>
+  </section>
+
+  <section class="courses">
+    <div class="course-card">
+      <h3>IELTS</h3>
+      <p>Learn English for your future abroad</p>
+    </div>
+    <div class="course-card">
+      <h3>Machine Learning</h3>
+      <p>Start AI & ML journey easily</p>
+    </div>
+    <div class="course-card">
+      <h3>SQL</h3>
+      <p>Learn Database Management</p>
+    </div>
+    <div class="course-card">
+      <h3>Python</h3>
+      <p>Start coding with Python</p>
+    </div>
+  </section>
+
+  <!-- ===== Footer Start ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>HABULAB</h3>
+        <p>Learn IELTS, Machine Learning, SQL, and Python all in one platform. 
+        Start your journey with HABULAB today.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+        <a href="#">LinkedIn</a>
       </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">হোম</a></li>
-        <li><a href="contact.html">যোগাযোগ</a></li>
-        <li><a href="about.html">আমাদের সম্পর্কে</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <aside class="sidebar">
-      <div class="section">
-        <div class="section-header" onclick="toggleMenu('mlIndex')">📘 Machine Learning</div>
-        <ul id="mlIndex" class="section-list hidden">
-          <li><a href="#" onclick="showContent('মেশিন লার্নিং পরিচিতি', 'মেশিন লার্নিং হলো এমন একটি প্রযুক্তি যেখানে কম্পিউটার ডেটা থেকে শেখে এবং পূর্বাভাস দেয়।')">অধ্যায় ১: পরিচিতি</a></li>
-          <li><a href="#" onclick="showContent('Supervised Learning', 'Supervised Learning হলো এমন একটি প্রক্রিয়া যেখানে লেবেলড ডেটা ব্যবহার করে মডেল ট্রেন করা হয়।')">অধ্যায় ২: Supervised Learning</a></li>
-          <li><a href="#" onclick="showContent('Unsupervised Learning', 'Unsupervised Learning হলো লেবেলবিহীন ডেটা থেকে প্যাটার্ন খোঁজা।')">অধ্যায় ৩: Unsupervised Learning</a></li>
-          <li><a href="#" onclick="showContent('Model Evaluation', 'মডেলের পারফরম্যান্স মাপার বিভিন্ন পদ্ধতি এখানে শেখানো হবে।')">অধ্যায় ৪: Model Evaluation</a></li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <div class="section-header" onclick="toggleMenu('sqlIndex')">💾 SQL</div>
-        <ul id="sqlIndex" class="section-list hidden">
-          <li><a href="#" onclick="showContent('Database পরিচিতি', 'ডেটাবেস হলো ডেটা সংরক্ষণের ব্যবস্থা।')">অধ্যায় ১: Database পরিচিতি</a></li>
-          <li><a href="#" onclick="showContent('SELECT Statement', 'SELECT statement দিয়ে ডেটা রিট্রিভ করা হয়।')">অধ্যায় ২: SELECT Statement</a></li>
-          <li><a href="#" onclick="showContent('JOINs', 'JOINs ব্যবহার করে বিভিন্ন টেবিল যুক্ত করা যায়।')">অধ্যায় ৩: JOINs</a></li>
-        </ul>
-      </div>
-    </aside>
-
-    <section class="content" id="contentArea">
-      <h2>স্বাগতম HabuLab-এ!</h2>
-      <p>এখানে আপনি বাংলায় মেশিন লার্নিং সহজভাবে শিখতে পারবেন। বাম পাশে টপিকগুলো থেকে অধ্যায় নির্বাচন করুন।</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 HabuLab. সর্বস্বত্ব সংরক্ষিত।</p>
+    <p class="footer-bottom">© 2025 HABULAB | All Rights Reserved</p>
   </footer>
+  <!-- ===== Footer End ===== -->
 
-  <script src="script.js"></script>
 </body>
 </html>
